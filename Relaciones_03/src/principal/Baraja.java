@@ -21,13 +21,13 @@ public class Baraja {
     public void nuevaBaraja(){
         cartas.clear();
         cartasRepartidas.clear();
-        crearCartas("Espada");
-        crearCartas("Bastos");
-        crearCartas("Oro");
-        crearCartas("Copas");
+        crearCartas(PaloEnum.Espadas);
+        crearCartas(PaloEnum.Bastos);
+        crearCartas(PaloEnum.Oros);
+        crearCartas(PaloEnum.Copas);
     }
     
-    public void crearCartas(String palo){
+    public void crearCartas(PaloEnum palo){
         byte i=1;
         while(i<13){
             if (i==8)

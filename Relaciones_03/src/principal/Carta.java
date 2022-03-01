@@ -5,12 +5,12 @@ package principal;
 public class Carta {
     
     private byte numero;
-    private String palo;
+    private PaloEnum palo;
 
     public Carta() {
     }
 
-    public Carta(byte numero, String palo) {
+    public Carta(byte numero, PaloEnum palo) {
         this.numero = numero;
         this.palo = palo;
     }
@@ -23,11 +23,11 @@ public class Carta {
         this.numero = numero;
     }
 
-    public String getPalo() {
+    public PaloEnum getPalo() {
         return palo;
     }
 
-    public void setPalo(String palo) {
+    public void setPalo(PaloEnum palo) {
         this.palo = palo;
     }
 
